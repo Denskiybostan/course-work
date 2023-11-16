@@ -63,7 +63,10 @@ public class Main {
                                 sumName += employeeList[i].getNameEmployee();
                             }
                             System.out.println("Ф.И.О. всех сотрудников " + sumName);
+                        } else {
+                            System.out.println("Ошибка");
                         }
+
 
 
                     }
