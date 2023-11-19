@@ -1,10 +1,8 @@
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class CounterId {
-    public static AtomicInteger COUNTE = new AtomicInteger (1);
+    public static int COUNTED;
     private int id;
     public CounterId() {
-        id = COUNTE.getAndIncrement();
+        id = COUNTED;
     }
     public int getId() {
         return id;
