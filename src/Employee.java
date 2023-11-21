@@ -1,13 +1,18 @@
 public class Employee {
-    String nameEmployee;
-    int departament;
-    int salary;
-    int numberId;
+    private String nameEmployee;
+    private int departament;
+    private int salary;
+    private int numberId;
     public Employee(String nameEmployee, int departament, int salary) {
         this.nameEmployee = nameEmployee;
         this.departament = departament;
         this.salary = salary;
         numberId = new CounterId().getId();
+    }
+    public void CounterId() {
+        numberId = CounterId.COUNTED;
+        int CounterId = 0;
+        this.numberId = CounterId++;
     }
     public String getNameEmployee() {
         return this.nameEmployee;
