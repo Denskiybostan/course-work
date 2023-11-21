@@ -9,6 +9,11 @@ public class Employee {
         this.salary = salary;
         numberId = new CounterId().getId();
     }
+    public void CounterId() {
+        numberId = CounterId.COUNTED;
+        int CounterId = 0;
+        this.numberId = CounterId++;
+    }
     public String getNameEmployee() {
         return this.nameEmployee;
     }
